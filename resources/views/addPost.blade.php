@@ -25,10 +25,9 @@
 
     <main>
         <div class="container my-5">
-            <h1 class="text-center">Edit Postingan</h1>
-            <form action="{{ route('post.update') }}" method="POST">
+            <h1 class="text-center">Tambah Postingan</h1>
+            <form action="{{ route('post.create') }}" method="POST">
                 @csrf
-                <input required type="hidden" name="id" id="id" value="{{ $post->id }}" />
                 <div class="row px-5 mt-5 mx-auto">
                     <div class="col-2 offset-3 my-2">
                         <div class="d-flex justify-content-between align-items-center h-100">
@@ -36,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-4 my-2">
-                        <input required type="text" name="topik" id="topik" value="{{ $post->topik }}"
+                        <input required type="text" name="topik" id="topik"
                             class="d-inline-block w-100 form-control" />
                     </div>
                     <div class="col-3"></div>
@@ -47,7 +46,7 @@
                         </div>
                     </div>
                     <div class="col-4 my-2">
-                        <input required type="text" name="materi" id="materi" value="{{ $post->materi }}"
+                        <input required type="text" name="materi" id="materi"
                             class="d-inline-block w-100 form-control" />
                     </div>
                     <div class="col-3"></div>
@@ -58,7 +57,7 @@
                         </div>
                     </div>
                     <div class="col-4 my-2">
-                        <input required type="text" name="konten" id="konten" value="{{ $post->konten }}"
+                        <input required type="text" name="konten" id="konten"
                             class="d-inline-block w-100 form-control" />
                     </div>
                     <div class="col-3"></div>
@@ -69,7 +68,7 @@
                         </div>
                     </div>
                     <div class="col-4 my-2">
-                        <input required type="text" name="keterangan" id="keterangan" value="{{ $post->keterangan }}"
+                        <input required type="text" name="keterangan" id="keterangan"
                             class="d-inline-block w-100 form-control" />
                     </div>
                     <div class="col-3"></div>
